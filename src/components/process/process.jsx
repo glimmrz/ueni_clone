@@ -32,7 +32,10 @@ export function Process() {
       </div>
 
       <Link href="/register">
-        <Button size="lg" className="w-full md:w-fit bg-[#F23C04]">
+        <Button
+          size="lg"
+          className="w-full md:w-fit bg-[#F23C04] hover:bg-[#F23C04]"
+        >
           get started now
         </Button>
       </Link>

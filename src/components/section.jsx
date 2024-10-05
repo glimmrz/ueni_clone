@@ -8,7 +8,7 @@ export function Section({ children, className, title, description }) {
     <section className={cn("py-16", className)}>
       <Container>
         <div className="flex items-center justify-center">
-          <hgroup className="max-w-3xl">
+          <hgroup className="max-w-[890px] w-full">
             <Heading className="text-center">{title}</Heading>
             <Description className="text-center">{description}</Description>
           </hgroup>

@@ -8,7 +8,7 @@ import {
 } from "../ui/carousel";
 import { ExampleCard } from "./example-card";
 
-export default function Examples() {
+export function Examples() {
   return (
     <Section
       title="Get the website of your dreams in a week"
