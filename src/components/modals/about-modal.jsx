@@ -6,10 +6,9 @@ export function AboutModal() {
   const { isOpen, onClose } = useAboutModal();
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} className="w-full md:w-fit">
       <iframe
-        width="560"
-        height="315"
+        className="w-full md:w-[560px] h-[315px]"
         src="https://www.youtube.com/embed/tg9j8Zk-h4Y?si=iYCvRDYzDVhcGgd0"
         title="YouTube video player"
         frameborder="0"

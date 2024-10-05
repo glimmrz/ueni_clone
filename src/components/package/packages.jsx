@@ -77,7 +77,7 @@ export function Packages() {
           ))}
         </div>
 
-        <Button size="lg" variant="outline">
+        <Button size="lg" variant="outline" className="w-full md:w-fit">
           the full list of whats included
         </Button>
       </div>

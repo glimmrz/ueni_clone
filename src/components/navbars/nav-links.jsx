@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export function NavbarLinks() {
   return (
-    <div className="flex items-center gap-6 border border-muted-foreground rounded-full p-2">
+    <div className="flex items-center gap-2 md:gap-6 border border-muted-foreground rounded-full p-2">
       <Link href="#examples">
         <Button className="rounded-full bg-transparent hover:bg-primary">
           examples
