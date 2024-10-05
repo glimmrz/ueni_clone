@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export function DifferenceTable() {
   return (
-    <div className="overflow-x-auto border-2 border-shade rounded-md">
+    <div className="overflow-x-auto border-2 border-shade rounded-md text-primary">
       <table className="capitalize rounded-md w-full min-w-full overflow-hidden bg-background shadow-rg text-left">
         <thead>
           <tr className="border-b-2 border-shade">
