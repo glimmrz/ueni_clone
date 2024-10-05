@@ -4,6 +4,7 @@ import { Features } from "@/components/feature/features";
 import { Hero } from "@/components/hero";
 import { Process } from "@/components/process/process";
 import { Refund } from "@/components/refund";
+import { Reviews } from "@/components/review/reviews";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Examples />
       <Process />
+      <Reviews />
       <Differences />
       <Refund />
       <Features />

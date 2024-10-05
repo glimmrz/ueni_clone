@@ -15,7 +15,7 @@ export function ProcessCard({ data }) {
           nunc vitae tellus luctus ullamcorper. Nam porttitor, elit in ultrices
           imperdiet, eros est venenatis tortor, a lobortis risus libero et est.
         </CardDescription>
-        <p className="font-semibold text-2xl text-center mt-2">
+        <p className="font-semibold text-xl md:text-2xl text-center mt-2">
           {data.highlight}
         </p>
       </CardContent>
