@@ -6,13 +6,13 @@ export function NavbarLinks() {
       <Button className="rounded-full bg-transparent hover:bg-primary">
         examples
       </Button>
-      <Button className="rounded-full bg-transparent hover:bg-primary">
+      <Button className="hidden md:flex rounded-full bg-transparent hover:bg-primary">
         UENI vs others
       </Button>
       <Button className="rounded-full bg-transparent hover:bg-primary">
         pricing
       </Button>
-      <Button className="rounded-full bg-transparent hover:bg-primary">
+      <Button className="hidden md:flex rounded-full bg-transparent hover:bg-primary">
         questions?
       </Button>
     </div>
