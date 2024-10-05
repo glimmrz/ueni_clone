@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 export function ExampleCard() {
   return (
     <Card className="select-none">
-      <CardContent className="flex flex-col gap-4 pb-2">
+      <CardContent className="flex flex-col gap-4">
         <figure className="h-52 md:h-[350px] w-full relative">
           <Image
             src="https://ueni-res.cloudinary.com/image/upload/v1697570972/marketing/og/new-nov-2.webp"
