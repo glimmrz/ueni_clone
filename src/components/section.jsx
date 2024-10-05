@@ -3,9 +3,9 @@ import { Description } from "./description";
 import { Heading } from "./heading";
 import { Container } from "./container";
 
-export function Section({ children, className, title, description }) {
+export function Section({ children, className, title, description, id }) {
   return (
-    <section className={cn("py-8", className)}>
+    <section className={cn("py-8", className)} id={id}>
       <Container>
         {title && (
           <div className="flex items-center justify-center">

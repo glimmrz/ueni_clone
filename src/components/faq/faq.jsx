@@ -1,5 +1,5 @@
-import { FaqDropodown } from "./faq/faq-dropdown";
-import { Section } from "./section";
+import { Section } from "../section";
+import { FaqDropodown } from "./faq-dropdown";
 
 const faqs = [
   {
@@ -28,6 +28,7 @@ const faqs = [
 export function Faq() {
   return (
     <Section
+      id="faq"
       title="Most common questions we get"
       description="read or ask us a question"
     >

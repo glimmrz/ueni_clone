@@ -66,6 +66,7 @@ const packages = [
 export function Packages() {
   return (
     <Section
+      id="pricing"
       title="What do we offer and how much does it cost?"
       description="$149 one-time fee and then just $12.99 per month."
     >

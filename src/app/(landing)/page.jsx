@@ -1,6 +1,7 @@
+import { About } from "@/components/about";
 import { Differences } from "@/components/differences/defferences";
 import { Examples } from "@/components/examples/examples";
-import { Faq } from "@/components/faq";
+import { Faq } from "@/components/faq/faq";
 import { Features } from "@/components/feature/features";
 import { Hero } from "@/components/hero";
 import { Packages } from "@/components/package/packages";
@@ -18,6 +19,7 @@ export default function Home() {
       <Differences />
       <Refund />
       <Features />
+      <About />
       <Packages />
       <Faq />
     </>

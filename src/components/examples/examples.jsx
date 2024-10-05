@@ -11,6 +11,7 @@ import { ExampleCard } from "./example-card";
 export function Examples() {
   return (
     <Section
+      id="examples"
       title="Get the website of your dreams in a week"
       description="We build websites for more than 1000 categories — from local business to ecommerce"
     >
