@@ -1,10 +1,14 @@
+"use client";
 import Image from "next/image";
 import about from "@/assets/about.png";
 import { Background } from "./background";
 import { Heading } from "./heading";
 import { Section } from "./section";
+import { useAboutModal } from "@/hooks/controllers";
 
 export function About() {
+  const { onOpen } = useAboutModal();
+
   return (
     <Background>
       <Section>
@@ -37,7 +41,10 @@ export function About() {
             </div>
           </div>
           <div>
-            <figure className="relative h-[400px] w-full cursor-pointer">
+            <figure
+              className="relative h-[400px] w-full cursor-pointer"
+              onClick={onOpen}
+            >
               <Image src={about} alt="" fill className="object-cover" />
             </figure>
           </div>
