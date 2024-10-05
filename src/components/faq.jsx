@@ -28,7 +28,7 @@ const faqs = [
 export function Faq() {
   return (
     <Section
-      title="most common questions we get"
+      title="Most common questions we get"
       description="read or ask us a question"
     >
       <div className="flex flex-col gap-4">

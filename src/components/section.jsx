@@ -5,7 +5,7 @@ import { Container } from "./container";
 
 export function Section({ children, className, title, description }) {
   return (
-    <section className={cn("py-16", className)}>
+    <section className={cn("py-8", className)}>
       <Container>
         {title && (
           <div className="flex items-center justify-center">

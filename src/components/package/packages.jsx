@@ -66,7 +66,7 @@ const packages = [
 export function Packages() {
   return (
     <Section
-      title="what do we offer and how much does it cost?"
+      title="What do we offer and how much does it cost?"
       description="$149 one-time fee and then just $12.99 per month."
     >
       <div className="w-full flex items-center justify-center flex-col">
