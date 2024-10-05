@@ -1,7 +1,9 @@
-import { PhoneCall } from "lucide-react";
+import { ChevronDown, ChevronUp, PhoneCall } from "lucide-react";
 
 const Icons = {
   call: PhoneCall,
+  chevronDown: ChevronDown,
+  chevronUp: ChevronUp,
   check: (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" {...props}>
       <path
