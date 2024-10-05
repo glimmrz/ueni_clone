@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 export function FeatureCard({ data }) {
   return (
     <Card className="border-transparent shadow-none">
-      <CardContent className="flex flex-col gap-2">
+      <CardContent className="flex flex-col gap-2 px-0">
         <Icon icon={data.icon} size={58} />
         <CardTitle className="text-xl font-normal">{data.label}</CardTitle>
         <CardDescription>

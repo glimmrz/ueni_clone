@@ -1,3 +1,5 @@
+"use client";
+import { useFeaturesModal } from "@/hooks/controllers";
 import { Section } from "../section";
 import { Button } from "../ui/button";
 import { PackageCard } from "./package-card";
@@ -64,6 +66,8 @@ const packages = [
 ];
 
 export function Packages() {
+  const { onOpen } = useFeaturesModal();
+
   return (
     <Section
       id="pricing"
@@ -77,7 +81,12 @@ export function Packages() {
           ))}
         </div>
 
-        <Button size="lg" variant="outline" className="w-full md:w-fit">
+        <Button
+          size="lg"
+          variant="outline"
+          className="w-full md:w-fit"
+          onClick={onOpen}
+        >
           the full list of whats included
         </Button>
       </div>
