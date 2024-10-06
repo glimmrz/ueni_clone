@@ -34,7 +34,7 @@ export function Hero() {
       <div className="min-h-screen text-background">
         <Section className="py-4">
           <div className="flex flex-col items-center justify-center gap-8">
-            <figure className="relative h-[22px] w-[360px]">
+            <figure className="relative h-[22px] w-full md:w-[360px] hidden md:block">
               <Image
                 src={trustpilot}
                 alt="trustpilot image"
@@ -76,7 +76,7 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <figure className="relative h-[22px] w-[360px] md:hidden">
+              <figure className="relative h-[22px] w-full md:hidden">
                 <Image
                   src={trustpilot}
                   alt="trustpilot image"
