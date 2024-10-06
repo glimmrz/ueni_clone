@@ -1,8 +1,8 @@
 import { Card, CardContent } from "../ui/card";
 
-export function ReviewCard() {
+export function TrustpilotReviewCard() {
   return (
-    <Card className="select-none">
+    <Card className="select-none border-0 w-fit">
       <CardContent>
         <iframe
           title="Customer reviews powered by Trustpilot"
