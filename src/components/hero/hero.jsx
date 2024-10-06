@@ -75,8 +75,8 @@ export function Hero() {
               </span>
             </div>
 
-            <div className="flex flex-col gap-4">
-              <figure className="relative h-[22px] w-full md:hidden">
+            <div className="flex flex-col items-center gap-4 w-full">
+              <figure className="relative h-[22px] w-full block md:hidden">
                 <Image
                   src={trustpilot}
                   alt="trustpilot image"
