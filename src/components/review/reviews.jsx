@@ -1,5 +1,4 @@
 import Image from "next/image";
-import pilot from "@/assets/pilot.png";
 import { Heading } from "../heading";
 import { Section } from "../section";
 import { Slider } from "../slider";
@@ -14,7 +13,7 @@ export function Reviews() {
           Trusted by more than 700,000 business owners since 2014
         </Heading>
         <figure className="relative h-20">
-          <Image src={pilot} alt="trustpilot" fill className="object-contain" />
+          <Image src="" alt="trustpilot" fill className="object-contain" />
         </figure>
       </div>
 

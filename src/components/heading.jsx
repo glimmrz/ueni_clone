@@ -4,7 +4,7 @@ export function Heading({ children, className }) {
   return (
     <h1
       className={cn(
-        "text-5xl leading-snug md:text-[64px] font-semibold text-inherit",
+        "text-5xl md:text-[58px] font-semibold text-inherit",
         className
       )}
     >

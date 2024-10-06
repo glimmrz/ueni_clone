@@ -1,5 +1,4 @@
 import Link from "next/link";
-import logo from "@/assets/logoue.svg";
 import Image from "next/image";
 
 export function Logo() {
