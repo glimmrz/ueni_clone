@@ -1,7 +1,7 @@
 import { Icon } from "../icon";
 import { Card, CardContent, CardDescription, CardTitle } from "../ui/card";
 
-export function FeatureCard({ data }) {
+export function ServicesCard({ data }) {
   return (
     <Card className="border-transparent shadow-none">
       <CardContent className="flex flex-col gap-2 px-0">

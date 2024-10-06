@@ -1,5 +1,5 @@
 import { Section } from "../section";
-import { FeatureCard } from "./feature-card";
+import { ServicesCard } from "./service-card";
 
 const features = [
   {
@@ -36,7 +36,7 @@ const features = [
   },
 ];
 
-export function Features() {
+export function Services() {
   return (
     <Section
       title="Easier & more affordable."
@@ -44,7 +44,7 @@ export function Features() {
     >
       <div className="grid gap-4 md:gap-8 md:grid-cols-2">
         {features?.map((feature, index) => (
-          <FeatureCard key={index} data={feature} />
+          <ServicesCard key={index} data={feature} />
         ))}
       </div>
     </Section>

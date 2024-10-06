@@ -1,19 +1,17 @@
 import { cn } from "@/lib/utils";
-import { Heading } from "./heading";
 import { Container } from "./container";
+import { Title } from "./title";
 
-export function Section({ children, className, title, description, id }) {
+export function Section({ children, className, title, subtitle, id }) {
   return (
     <section className={cn("py-8", className)} id={id}>
       <Container>
         {title && (
           <div className="flex items-center justify-center">
-            <hgroup className="max-w-[890px] w-full">
-              <Heading className="text-center">{title}</Heading>
-            </hgroup>
+            <Title title={title} subtitle={subtitle} />
           </div>
         )}
-        <div className="mt-8">{children}</div>
+        <div className="mt-6 md:mt-8">{children}</div>
       </Container>
     </section>
   );

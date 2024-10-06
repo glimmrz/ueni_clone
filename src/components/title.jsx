@@ -1,5 +1,10 @@
 import { cn } from "@/lib/utils";
 
-export function Title({ children, className }) {
-  return <h2 className={cn("text-2xl md:text-4xl", className)}>{children}</h2>;
+export function Title({ title, subtitle, className }) {
+  return (
+    <hgroup className={cn("text-center", className)}>
+      <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>
+      <p className="text-xl text-muted-foreground">{subtitle}</p>
+    </hgroup>
+  );
 }
