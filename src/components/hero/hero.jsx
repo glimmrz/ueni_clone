@@ -2,12 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import trustpilot from "@/assets/trustpilot.png";
 import trustpilot_rev from "@/assets/trustpilot_rev.png";
-import { Container } from "../container";
 import { Background } from "../background";
 import { Heading } from "../heading";
 import { Checkbox } from "../checkbox";
 import { Button } from "../ui/button";
 import { HeroPromo } from "./hero-promo";
+import { Section } from "../section";
 
 const checkboxData = [
   {
@@ -31,8 +31,8 @@ const checkboxData = [
 export function Hero() {
   return (
     <Background>
-      <div className="min-h-screen text-background pt-6 md:pt-12">
-        <Container>
+      <div className="min-h-screen text-background">
+        <Section className="py-4">
           <div className="flex flex-col items-center justify-center gap-8">
             <figure className="relative h-[22px] w-[360px]">
               <Image
@@ -97,7 +97,7 @@ export function Hero() {
 
             <HeroPromo />
           </div>
-        </Container>
+        </Section>
       </div>
     </Background>
   );
