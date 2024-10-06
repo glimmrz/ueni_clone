@@ -39,8 +39,8 @@ const features = [
 export function Services() {
   return (
     <Section
-      title="Easier & more affordable."
-      description="What sets us apart?"
+      title="What features are included in your UENI website?"
+      subtitle="All the essentials to run a successful website or online store."
     >
       <div className="grid gap-4 md:gap-8 md:grid-cols-2">
         {features?.map((feature, index) => (

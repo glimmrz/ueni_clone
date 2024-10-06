@@ -27,11 +27,7 @@ const faqs = [
 
 export function Faq() {
   return (
-    <Section
-      id="faq"
-      title="Most common questions we get"
-      description="read or ask us a question"
-    >
+    <Section title="FAQs">
       <div className="flex flex-col gap-4">
         {faqs.map((faq, index) => (
           <FaqDropodown faq={faq} key={index} />

@@ -3,12 +3,12 @@ import { Button } from "../ui/button";
 
 export function DifferenceTable() {
   return (
-    <div className="overflow-x-auto border-2 border-shade rounded-md text-primary">
+    <div className="overflow-x-auto border-2 border-shade rounded-md text-foreground">
       <table className="capitalize rounded-md w-full min-w-full overflow-hidden bg-background shadow-rg text-left">
         <thead>
           <tr className="border-b-2 border-shade">
             <th className="p-3 text-xl font-bold w-2/4"></th>
-            <th className="p-3 text-xl font-semibold text-center w-32 bg-primary text-background">
+            <th className="p-3 text-xl font-semibold text-center w-32 bg-foreground text-background">
               WALTON
             </th>
             <th className="p-3 text-xl border-r-2 font-semibold text-center w-32">
@@ -24,7 +24,7 @@ export function DifferenceTable() {
             <td className="p-3 text-base w-2/4">
               Chances of launching your website
             </td>
-            <td className="p-3 text-base text-center w-32 bg-primary text-background">
+            <td className="p-3 text-base text-center w-32 bg-foreground text-background">
               100%
             </td>
             <td className="p-3 text-base border-r-2 text-center w-32">
@@ -37,7 +37,7 @@ export function DifferenceTable() {
             <td className="p-3 text-base w-2/4">
               Done-for-you design & content
             </td>
-            <td className="p-3 text-xl text-center w-32 bg-primary text-background">
+            <td className="p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">
                 <Icon size={24} icon="check" />
               </div>
@@ -58,7 +58,7 @@ export function DifferenceTable() {
             <td className="p-3 text-base w-2/4">
               Use any domain to get started fast
             </td>
-            <td className="p-3 text-xl text-center w-32 bg-primary text-background">
+            <td className="p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">
                 <Icon size={24} icon="check" />
               </div>
@@ -77,7 +77,7 @@ export function DifferenceTable() {
 
           <tr className="border-b-2 border-shade last-of-type:border-0">
             <td className="p-3 text-base w-2/4">Launch & training call</td>
-            <td className="p-3 text-xl text-center w-32 bg-primary text-background">
+            <td className="p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">
                 <Icon size={24} icon="check" />
               </div>
@@ -98,7 +98,7 @@ export function DifferenceTable() {
             <td className="p-3 text-base w-2/4">
               Edit with easy-to-use website editor
             </td>
-            <td className="p-3 text-xl text-center w-32 bg-primary text-background">
+            <td className="p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">
                 <Icon size={24} icon="check" />
               </div>
@@ -117,7 +117,7 @@ export function DifferenceTable() {
 
           <tr className="border-b-2 border-shade last-of-type:border-0">
             <td className="p-3 text-base w-2/4">Custom one-on-one support</td>
-            <td className="p-3 text-xl text-center w-32 bg-primary text-background">
+            <td className="p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">
                 <Icon size={24} icon="check" />
               </div>
@@ -136,7 +136,7 @@ export function DifferenceTable() {
 
           <tr className="border-b-2 border-shade last-of-type:border-0">
             <td className="p-3 text-base w-2/4">Fast, secure hosting</td>
-            <td className="p-3 text-xl text-center w-32 bg-primary text-background">
+            <td className="p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">
                 <Icon size={24} icon="check" />
               </div>
@@ -155,7 +155,7 @@ export function DifferenceTable() {
 
           <tr className="border-b-2 border-shade last-of-type:border-0">
             <td className="p-3 text-base w-2/4">Launch in a week</td>
-            <td className="p-3 text-xl text-center w-32 bg-primary text-background">
+            <td className="p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">
                 <Icon size={24} icon="check" />
               </div>
@@ -174,7 +174,7 @@ export function DifferenceTable() {
 
           <tr className="border-b-2 border-shade last-of-type:border-0">
             <td className="p-3 text-base w-2/4">Unlimited edits for 30 days</td>
-            <td className="p-3 text-xl text-center w-32 bg-primary text-background">
+            <td className="p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">
                 <Icon size={24} icon="check" />
               </div>
@@ -193,7 +193,7 @@ export function DifferenceTable() {
 
           <tr className="border-b-2 border-shade last-of-type:border-0">
             <td className="p-3 text-base w-2/4">Biggest frustration</td>
-            <td className="p-3 text-base text-center w-32 bg-primary text-background">
+            <td className="p-3 text-base text-center w-32 bg-foreground text-background">
               not finding us sooner
             </td>
             <td className="p-3 border-r-2 text-base text-center w-32">
@@ -211,7 +211,7 @@ export function DifferenceTable() {
                 get started
               </Button>
             </td>
-            <td className="p-3 text-3xl font-semibold text-center w-32 bg-primary text-background">
+            <td className="p-3 text-3xl font-semibold text-center w-32 bg-foreground text-background">
               £12.99 /month
             </td>
             <td className="p-3 border-r-2 text-xl font-semibold text-destructive text-center w-32">
