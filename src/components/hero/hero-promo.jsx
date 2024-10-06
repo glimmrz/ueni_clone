@@ -8,7 +8,7 @@ export function HeroPromo() {
   return (
     <div className="w-full relative">
       {/* Main image */}
-      <div className="sticky md:absolute left-0 right-0 m-auto w-fit">
+      <div className="sticky md:sticky left-0 right-0 m-auto w-fit">
         <Image src={hp_lg} alt="" className="object-contain" />
       </div>
       {/* Left Side-Image */}

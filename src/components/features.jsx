@@ -43,7 +43,6 @@ export function Features() {
     <Section
       title="We build your website at an affordable price."
       subtitle="Launch the website of your dreams."
-      className="mt-0 md:mt-28"
     >
       <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
         <div>
