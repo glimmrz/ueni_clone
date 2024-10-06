@@ -45,7 +45,7 @@ export function Features() {
       subtitle="Launch the website of your dreams."
       className="mt-0 md:mt-28"
     >
-      <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
         <div>
           <figure className="relative h-[250px] md:h-[400px] w-full rounded-md overflow-hidden">
             <Image

@@ -1,3 +1,4 @@
+import { CustomerReview } from "@/components/customer-review";
 import { Features } from "@/components/features";
 import { Hero } from "@/components/hero/hero";
 import { Process } from "@/components/process/process";
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Process />
+      <CustomerReview />
       <TrustpilotReviews />
     </>
   );
