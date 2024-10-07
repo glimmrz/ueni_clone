@@ -28,6 +28,7 @@ export function Landing() {
         src={require("../assets/bg.mp4")}
         autoPlay
         loop
+        muted
         className="absolute top-0 left-0 w-full h-[70vh] md:h-[80vh] object-cover z-[-1]"
       />
       <Section>
