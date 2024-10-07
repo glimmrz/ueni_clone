@@ -3,6 +3,8 @@ import { Container } from "../container";
 import { Logo } from "../logo";
 import { Icon } from "../icon";
 import { Button } from "../ui/button";
+import { MenuDropdown } from "../dropdowns/menu-dropdown";
+import { LanguageDropdown } from "../dropdowns/language-dropdown";
 
 export function Navbar() {
   return (
@@ -11,23 +13,8 @@ export function Navbar() {
         <div className="h-full flex items-center justify-between capitalize text-lg">
           {/* Menu-Language */}
           <div className="flex items-center gap-4 md:gap-8">
-            {/* Menu */}
-            <Button
-              variant="outline"
-              className="min-w-fit gap-2 bg-transparent p-2"
-            >
-              <Icon icon="menu" size={20} />
-              <span className="hidden md:block">Menu</span>
-            </Button>
-
-            {/* Language */}
-            <Button
-              variant="outline"
-              className="min-w-fit gap-2 bg-transparent p-2"
-            >
-              <Icon icon="planet" />
-              <span className="hidden md:block">english</span>
-            </Button>
+            <MenuDropdown />
+            <LanguageDropdown />
           </div>
 
           <Logo />
