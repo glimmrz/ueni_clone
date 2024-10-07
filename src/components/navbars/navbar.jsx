@@ -19,11 +19,11 @@ export function Navbar() {
 
           <Logo />
 
-          {/* Call button */}
+          {/* Login button */}
           <Link href="/auth">
             <Button
               variant="outline"
-              className="bg-transparent border-background gap-2 rounded-full min-w-fit"
+              className="bg-transparent px-2 md:px-8 text-base md:border-background gap-2 rounded-full min-w-fit "
             >
               <span>login</span>
             </Button>
