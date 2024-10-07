@@ -33,7 +33,7 @@ export const FloatingLabelInput = ({ label, type, ...props }) => {
       <Input
         id={id}
         type={showPassword ? "text" : type}
-        className={cn("h-14 rounded-md peer", props.className)}
+        className={cn("h-14 rounded-md text-foreground peer", props.className)}
         ref={inputRef}
         {...props}
         onFocus={handleFocus}

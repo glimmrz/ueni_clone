@@ -57,7 +57,7 @@ export function AuthWrapper() {
               variant="outline"
               className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/80"
             >
-              <Icon size={28} icon="google" />
+              <Icon size={28} icon="facebook" />
               <span>continue with facebook</span>
             </Button>
             {mode == "login" && (
@@ -66,7 +66,7 @@ export function AuthWrapper() {
                   variant="outline"
                   className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/80"
                 >
-                  <Icon size={28} icon="google" />
+                  <Icon size={28} icon="gmail" />
                   <span>sign in with email</span>
                 </Button>
               </Link>
@@ -77,7 +77,7 @@ export function AuthWrapper() {
                   variant="outline"
                   className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/80"
                 >
-                  <Icon size={28} icon="google" />
+                  <Icon size={28} icon="gmail" />
                   <span>sign up with email</span>
                 </Button>
               </Link>
