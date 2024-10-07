@@ -8,6 +8,8 @@ export function Logo() {
     //     <Image src={logo} alt="walton" />
     //   </figure>
     // </Link>
-    <h1 className="text-background text-2xl font-semibold">WALTON</h1>
+    <Link href="/">
+      <h1 className="text-background text-2xl font-semibold">WALTON</h1>
+    </Link>
   );
 }
