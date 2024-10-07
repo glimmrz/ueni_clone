@@ -1,10 +1,8 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 import { Icon } from "../icon";
 import { useState } from "react";
-import { Logo } from "../logo";
 
 export function AuthWrapper() {
   const [mode, setMode] = useState("login");
@@ -12,8 +10,7 @@ export function AuthWrapper() {
   return (
     <div className="min-h-[calc(100vh-72px)] flex items-center justify-center">
       <div className="w-full md:w-[500px] min-h-[70vh] shadow-lg rounded-2xl flex flex-col items-center justify-center pt-8 pb-8 pr-4 pl-4">
-        {/* <h2 className="text-3xl font-semibold uppercase">walton</h2> */}
-        {/* <Logo /> */}
+        <h2 className="text-3xl font-semibold uppercase">walton</h2>
         {/* Toggle buttons */}
         <div className="grid grid-cols-2 w-full gap-4 bg-muted p-4 rounded-full mt-8">
           <Button
