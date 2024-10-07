@@ -53,9 +53,9 @@ export function Hero() {
               ))}
             </div>
 
-            <div className="flex gap-8">
-              <Link href="#" passHref>
-                <Button>get started</Button>
+            <div className="flex gap-8 w-full md:w-fit">
+              <Link href="#" passHref className="w-full">
+                <Button className="w-full md:w-fit">get started</Button>
               </Link>
               <Button
                 variant="outline"
