@@ -13,7 +13,7 @@ export function RegisterForm() {
           <Button
             size="icon"
             variant="ghost"
-            className="rounded-full min-w-fit"
+            className="rounded-full min-w-fit bg-background/10"
           >
             <Icon icon="back" />
           </Button>
