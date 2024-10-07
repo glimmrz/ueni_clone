@@ -9,13 +9,13 @@ import placeholder from "@/assets/placeholder.png";
 
 export function LoginForm() {
   return (
-    <div className="min-h-[calc(100vh-72px)] flex items-center justify-center">
-      <div className="w-full md:w-[500px] min-h-[70vh] shadow-lg rounded-2xl flex flex-col gap-4 pt-8 pb-8 pr-4 pl-4">
+    <div className="min-h-[calc(100vh-72px)] flex items-center justify-center text-background">
+      <div className="w-full md:w-[500px] min-h-[70vh] bg-foreground shadow-lg rounded-2xl flex flex-col gap-4 pt-8 pb-8 pr-4 pl-4">
         <Link href="/auth" passHref>
           <Button
             size="icon"
             variant="ghost"
-            className="rounded-full min-w-fit"
+            className="rounded-full min-w-fit bg-background/10"
           >
             <Icon icon="back" />
           </Button>
@@ -27,7 +27,7 @@ export function LoginForm() {
         <Title
           title="Welcome back"
           subtitle="Sign in to your Walton account."
-          className="text-left space-y-0"
+          className="text-left  space-y-0"
         />
 
         <form action="" className="flex flex-col gap-4">

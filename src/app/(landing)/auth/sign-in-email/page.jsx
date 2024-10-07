@@ -1,5 +1,10 @@
+import { Background } from "@/components/background";
 import { LoginForm } from "@/components/forms/login-form";
 
 export default function Page() {
-  return <LoginForm />;
+  return (
+    <Background>
+      <LoginForm />
+    </Background>
+  );
 }

@@ -1,9 +1,12 @@
 import { AuthWrapper } from "@/components/auth/auth-wrapper";
+import { Background } from "@/components/background";
 
-export default function Page({ params }) {
+export default function Page() {
   return (
-    <div className="flex items-center justify-center">
-      <AuthWrapper mode={params.mode}></AuthWrapper>
-    </div>
+    <Background>
+      <div className="flex items-center justify-center">
+        <AuthWrapper />
+      </div>
+    </Background>
   );
 }
