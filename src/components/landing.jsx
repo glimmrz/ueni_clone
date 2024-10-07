@@ -31,15 +31,17 @@ export function Landing() {
         muted
         className="absolute top-0 left-0 w-full h-[70vh] md:h-[80vh] object-cover z-[-1]"
       />
-      <Section>
+      <Section sectionStyles="mt-0 md:mt-0">
         <Heading className="text-center leading-snug md:leading-relaxed text-4xl text-background">
           <span className="sr-only">
             We bring people and technology together to change{" "}
             {words[currentIndex]} for the better.
           </span>
           <span aria-hidden="true">
-            We bring people and <br /> technology together to <br />{" "}
+            We bring people and <br /> technology together to{" "}
+            <br className="hidden md:block" />{" "}
             <span className="transition-transform duration-300">change</span>{" "}
+            <br className="md:hidden" />
             <span className="inline-flex items-center justify-center">
               <span
                 className={`text-foreground inline-block transition-all duration-1000 ease-in-out ${
