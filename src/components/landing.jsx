@@ -23,9 +23,15 @@ export function Landing() {
   }, [words.length]);
 
   return (
-    <div className="h-[70vh] md:h-[80vh] bg-red-100 w-full flex items-center justify-center">
+    <div className="relative h-[70vh] md:h-[80vh] w-full flex items-center justify-center">
+      <video
+        src={require("../assets/bg.mp4")}
+        autoPlay
+        loop
+        className="absolute top-0 left-0 w-full h-[70vh] md:h-[80vh] object-cover z-[-1]"
+      />
       <Section>
-        <Heading className="text-center leading-snug md:leading-relaxed text-4xl">
+        <Heading className="text-center leading-snug md:leading-relaxed text-4xl text-background">
           <span className="sr-only">
             We bring people and technology together to change{" "}
             {words[currentIndex]} for the better.
@@ -35,7 +41,7 @@ export function Landing() {
             <span className="transition-transform duration-300">change</span>{" "}
             <span className="inline-flex items-center justify-center">
               <span
-                className={`inline-block transition-all duration-1000 ease-in-out ${
+                className={`text-foreground inline-block transition-all duration-1000 ease-in-out ${
                   isAnimating ? "opacity-0 scale-75" : "opacity-100 scale-100"
                 }`}
                 style={{ transformOrigin: "center" }}

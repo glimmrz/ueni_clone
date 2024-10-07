@@ -28,19 +28,19 @@ export function LanguageDropdown() {
         <DropdownMenuGroup>
           <DropdownMenuItem className="flex justify-between items-center">
             <span>English</span>
-            <Icon icon="usa" />
+            <Icon icon="usa" size={28} />
           </DropdownMenuItem>
           <DropdownMenuItem className="flex justify-between items-center">
             <span>Spanish</span>
-            <Icon icon="spain" />
+            <Icon icon="spain" size={28} />
           </DropdownMenuItem>
           <DropdownMenuItem className="flex justify-between items-center">
             <span>Portugese</span>
-            <Icon icon="portugal" />
+            <Icon icon="portugal" size={28} />
           </DropdownMenuItem>
           <DropdownMenuItem className="flex justify-between items-center">
             <span>Bengali</span>
-            <Icon icon="bangladesh" />
+            <Icon icon="bangladesh" size={28} />
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>
