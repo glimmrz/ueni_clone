@@ -1,3 +1,4 @@
+import { About } from "@/components/about";
 import { CustomerReview } from "@/components/customer-review";
 import { Differences } from "@/components/differences/defferences";
 import { Faq } from "@/components/faq/faq";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Landing />
+      <About />
       <Hero />
       <Features />
       <Process />
