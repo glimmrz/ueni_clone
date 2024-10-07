@@ -33,7 +33,7 @@ export function Navbar() {
           <Logo />
 
           {/* Call button */}
-          <Link href="/login">
+          <Link href="/auth">
             <Button
               variant="outline"
               className="bg-transparent border-background gap-2 rounded-full min-w-fit"
