@@ -8,8 +8,8 @@ export function AuthWrapper() {
   const [mode, setMode] = useState("login");
 
   return (
-    <div className="min-h-[calc(100vh-72px)] flex items-center justify-center text-background">
-      <div className="w-full md:w-[500px] min-h-[70vh] bg-foreground shadow-lg rounded-2xl flex flex-col items-center justify-center pt-8 pb-8 pr-4 pl-4">
+    <div className="md:min-h-[calc(100vh-72px)] flex items-center justify-center text-background">
+      <div className="w-full md:w-[500px] min-h-[calc(100vh-72px)] md:min-h-[70vh] bg-foreground shadow-lg rounded-2xl flex flex-col items-center justify-center pt-8 pb-8 pr-4 pl-4">
         <h2 className="text-3xl font-semibold uppercase">walton</h2>
         {/* Toggle buttons */}
         <div className="grid grid-cols-2 w-full gap-4 bg-muted p-4 rounded-full mt-8">
@@ -40,7 +40,7 @@ export function AuthWrapper() {
             {/* Apple */}
             <Button
               variant="outline"
-              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/80"
+              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
             >
               <Icon size={28} icon="apple" />
               <span>continue with apple</span>
@@ -48,14 +48,14 @@ export function AuthWrapper() {
             {/* Google */}
             <Button
               variant="outline"
-              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/80"
+              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
             >
               <Icon size={28} icon="google" />
               <span>continue with google</span>
             </Button>
             <Button
               variant="outline"
-              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/80"
+              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
             >
               <Icon size={28} icon="facebook" />
               <span>continue with facebook</span>
@@ -64,7 +64,7 @@ export function AuthWrapper() {
               <Link href="/auth/sign-in-email">
                 <Button
                   variant="outline"
-                  className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/80"
+                  className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
                 >
                   <Icon size={28} icon="gmail" />
                   <span>sign in with email</span>
@@ -75,7 +75,7 @@ export function AuthWrapper() {
               <Link href="/auth/sign-up-email" passHref>
                 <Button
                   variant="outline"
-                  className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/80"
+                  className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
                 >
                   <Icon size={28} icon="gmail" />
                   <span>sign up with email</span>
