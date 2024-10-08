@@ -5,10 +5,11 @@ import { Logo } from "../logo";
 import { Button } from "../ui/button";
 import { LanguageDropdown } from "../dropdowns/language-dropdown";
 import { Icon } from "../icon";
-import { useMenuSidebar } from "@/hooks/controllers";
+import { useLanguageSidebar, useMenuSidebar } from "@/hooks/controllers";
 
 export function Navbar() {
   const { isOpen, onOpen, onClose } = useMenuSidebar();
+  const lanSidebar = useLanguageSidebar();
 
   return (
     <nav className="sticky top-0 z-40 bg-foreground text-background">
@@ -27,7 +28,18 @@ export function Navbar() {
                 {isOpen ? "close" : "Menu"}
               </span>
             </Button>
-            <LanguageDropdown />
+
+            {/* Lamguage */}
+            <Button
+              onClick={() =>
+                lanSidebar.isOpen ? lanSidebar.onClose() : lanSidebar.onOpen()
+              }
+              variant="outline"
+              className="min-w-fit gap-2 bg-transparent p-2"
+            >
+              <Icon icon="planet" size={20} />
+              <span className="hidden md:block">English</span>
+            </Button>
           </div>
           <div className="flex items-center justify-center">
             <Logo />
