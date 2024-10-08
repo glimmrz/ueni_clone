@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Heading } from "./heading";
 import { Section } from "./section";
 
@@ -8,6 +8,7 @@ export function Landing() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const words = ["people", "businesses", "things"];
+  const videoRef = useRef(null);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -22,14 +23,33 @@ export function Landing() {
     return () => clearInterval(intervalId);
   }, [words.length]);
 
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        videoRef.current?.pause();
+      } else {
+        videoRef.current?.play();
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
+
   return (
-    <div className="relative h-[70vh] md:h-[80vh] w-full flex items-center justify-center">
+    <div className="relative h-[70vh] md:h-[80vh] w-full flex items-center justify-center overflow-hidden">
       <video
+        ref={videoRef}
         src={require("../assets/bg.mp4")}
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-[70vh] md:h-[80vh] object-cover z-[-1]"
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+        onContextMenu={(e) => e.preventDefault()}
       />
       <Section sectionStyles="mt-0 md:mt-0">
         <Heading className="text-center leading-snug md:leading-relaxed text-4xl text-background">
