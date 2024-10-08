@@ -3,19 +3,14 @@
 import { useMenuSidebar } from "@/hooks/controllers";
 import { Container } from "../container";
 import Link from "next/link";
-import { useEffect, useCallback } from "react";
 
 export function MenuSidebar() {
   const { isOpen, onClose } = useMenuSidebar();
 
-  useEffect(() => {
-    if (isOpen) document.body.style.overflow = "hidden";
-  }, [isOpen]);
-
   return (
     <div
-      className={`h-screen w-screen bg-foreground text-background fixed top-0 left-0 transition-opacity duration-500 ${
-        isOpen ? "opacity-100" : "opacity-0"
+      className={`h-screen w-screen bg-foreground text-background fixed top-0 left-0 transition-[opacity,transform] duration-500 -translate-x-full md:translate-x-0 ${
+        isOpen ? "opacity-100 translate-x-0" : "opacity-0"
       }`}
     >
       <Container>
