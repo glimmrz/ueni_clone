@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Container } from "../container";
 import { Logo } from "../logo";
 import { Button } from "../ui/button";
-import { LanguageDropdown } from "../dropdowns/language-dropdown";
 import { Icon } from "../icon";
 import { useLanguageSidebar, useMenuSidebar } from "@/hooks/controllers";
 
