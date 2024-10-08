@@ -29,7 +29,7 @@ export function LanguageSidebar() {
   return (
     <aside
       ref={sidebarRef}
-      className={`bg-foreground fixed top-0 left-0 h-[60vh] transition-all duration-500 w-full -translate-y-full text-background text-2xl ${
+      className={`bg-foreground fixed top-0 left-0 h-screen md:h-[60vh] transition-all duration-500 w-full -translate-y-full text-background text-2xl ${
         isOpen ? "translate-y-0" : ""
       }`}
     >

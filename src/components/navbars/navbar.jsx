@@ -27,26 +27,48 @@ export function Navbar() {
           {/* Menu-Language */}
           <div className="flex items-center gap-0 md:gap-8">
             {/* <MenuDropdown /> */}
-            <Button
-              onClick={() => (isOpen ? onClose() : onOpen())}
-              variant="outline"
-              className="min-w-fit gap-2 bg-transparent p-2"
-            >
-              <Icon icon={isOpen ? "close" : "menu"} size={20} />
-              <span className="hidden md:block">
-                {isOpen ? "close" : "Menu"}
-              </span>
-            </Button>
+            {isOpen && (
+              <Button
+                variant="outline"
+                className="min-w-fit gap-2 bg-transparent p-2"
+              >
+                <Icon icon="close" size={20} />
+                <span className="hidden md:block">Menu</span>
+              </Button>
+            )}
+
+            {!isOpen && (
+              <Button
+                onClick={onOpen}
+                variant="outline"
+                className="min-w-fit gap-2 bg-transparent p-2"
+              >
+                <Icon icon={isOpen ? "close" : "menu"} size={20} />
+                <span className="hidden md:block">Menu</span>
+              </Button>
+            )}
 
             {/* Lamguage */}
-            <Button
-              onClick={handleLanguageButtonClick}
-              variant="outline"
-              className="min-w-fit gap-2 bg-transparent p-2"
-            >
-              <Icon icon="planet" size={20} />
-              <span className="hidden md:block">English</span>
-            </Button>
+            {lanSidebar.isOpen && (
+              <Button
+                variant="outline"
+                className="min-w-fit gap-2 bg-transparent p-2"
+              >
+                <Icon icon="close" size={20} />
+                <span className="hidden md:block">English</span>
+              </Button>
+            )}
+
+            {!lanSidebar.isOpen && (
+              <Button
+                onClick={lanSidebar.onOpen}
+                variant="outline"
+                className="min-w-fit gap-2 bg-transparent p-2"
+              >
+                <Icon icon="planet" size={20} />
+                <span className="hidden md:block">English</span>
+              </Button>
+            )}
           </div>
           <div className="flex items-center justify-center">
             <Logo />
