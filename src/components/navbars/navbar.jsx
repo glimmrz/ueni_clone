@@ -10,6 +10,16 @@ export function Navbar() {
   const { isOpen, onOpen, onClose } = useMenuSidebar();
   const lanSidebar = useLanguageSidebar();
 
+  const handleLanguageButtonClick = (e) => {
+    e.stopPropagation();
+
+    if (lanSidebar.isOpen) {
+      lanSidebar.onClose();
+    } else {
+      lanSidebar.onOpen();
+    }
+  };
+
   return (
     <nav className="sticky top-0 z-40 bg-foreground text-background">
       <Container>
@@ -30,9 +40,7 @@ export function Navbar() {
 
             {/* Lamguage */}
             <Button
-              onClick={() =>
-                lanSidebar.isOpen ? lanSidebar.onClose() : lanSidebar.onOpen()
-              }
+              onClick={handleLanguageButtonClick}
               variant="outline"
               className="min-w-fit gap-2 bg-transparent p-2"
             >
