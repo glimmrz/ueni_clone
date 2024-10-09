@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 
 export function About() {
   return (
-    <Section>
+    <Section className="py-0 md:py-8">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-8">
           <Title
@@ -28,7 +28,7 @@ export function About() {
           <Button className="w-full md:w-fit">our services</Button>
         </div>
         <div className="row-start-1 md:col-start-2">
-          <figure className="relative h-[340px] md:h-[500px] w-full md:w-[500px] rounded-tl-[150px] overflow-hidden">
+          <figure className="relative h-[340px] md:h-[500px] w-full rounded-tl-[150px] overflow-hidden">
             <Image src={tech} alt="cameleon" fill className="object-cover" />
           </figure>
         </div>

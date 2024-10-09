@@ -52,7 +52,7 @@ export function Landing() {
         onContextMenu={(e) => e.preventDefault()}
       />
       <Section sectionStyles="mt-0 md:mt-0">
-        <Heading className="text-center leading-snug md:leading-relaxed text-4xl text-background">
+        <Heading className="text-center leading-snug md:leading-relaxed text-4xl lg:text-[74px] text-background">
           <span className="sr-only">
             We bring people and technology together to change{" "}
             {words[currentIndex]} for the better.
