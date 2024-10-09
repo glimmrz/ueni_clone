@@ -3,12 +3,13 @@
 import { useEffect, useState, useRef } from "react";
 import { Heading } from "./heading";
 import { Section } from "./section";
+import Image from "next/image";
+import bg from "@/assets/bg_static.png";
 
 export function Landing() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const words = ["people", "businesses", "things"];
-  const videoRef = useRef(null);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -23,34 +24,15 @@ export function Landing() {
     return () => clearInterval(intervalId);
   }, [words.length]);
 
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        videoRef.current?.pause();
-      } else {
-        videoRef.current?.play();
-      }
-    };
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
-  }, []);
-
   return (
     <div className="relative h-[70vh] md:h-[80vh] w-full flex items-center justify-center overflow-hidden">
-      <video
-        ref={videoRef}
-        src={require("../assets/bg.mp4")}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-        onContextMenu={(e) => e.preventDefault()}
+      <Image
+        src={bg}
+        alt=""
+        fill
+        className="object-cover absolute h-full w-full z-[-1]"
       />
+
       <Section sectionStyles="mt-0 md:mt-0">
         <Heading className="text-center leading-snug md:leading-relaxed text-4xl lg:text-[74px] text-background">
           <span className="sr-only">

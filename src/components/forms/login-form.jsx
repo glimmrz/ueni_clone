@@ -10,7 +10,7 @@ import placeholder from "@/assets/placeholder.png";
 export function LoginForm() {
   return (
     <div className="md:min-h-[calc(100vh-72px)] flex items-center justify-center text-background">
-      <div className="w-full md:w-[500px] min-h-[calc(100vh-72px)] md:min-h-[70vh] bg-foreground/50 md:bg-foreground shadow-lg rounded-2xl flex flex-col gap-4 pt-8 pb-8 pr-4 pl-4">
+      <div className="w-full md:w-[500px] min-h-[calc(100vh-72px)] md:min-h-[70vh] bg-foreground/50 md:bg-foreground shadow-lg md:rounded-2xl flex flex-col gap-4 pt-8 pb-8 pr-4 pl-4">
         <Link href="/auth" passHref>
           <Button
             size="icon"
