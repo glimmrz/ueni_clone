@@ -38,6 +38,7 @@ export function MenuSidebar() {
                 key={index}
                 href="#"
                 className="font-semibold text-2xl hover:text-primary relative w-fit group"
+                onClick={onClose}
               >
                 <span>{item}</span>
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />

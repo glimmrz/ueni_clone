@@ -39,6 +39,7 @@ export function LanguageSidebar() {
             { language: "Portuguese", icon: "portugal" },
           ].map((item, index) => (
             <div
+              onClick={onClose}
               key={index}
               className="flex justify-between items-center max-w-60 relative group"
             >
