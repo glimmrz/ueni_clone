@@ -16,7 +16,7 @@ export function AuthWrapper() {
           <Button
             onClick={() => setMode("login")}
             variant={mode === "login" ? "" : "ghost"}
-            className={`min-w-full rounded-full ${
+            className={`min-w-fit rounded-full ${
               mode !== "login" ? "text-foreground" : ""
             }`}
           >
