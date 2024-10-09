@@ -26,8 +26,8 @@ export function MenuSidebar() {
   return (
     <div
       ref={sidebarRef}
-      className={`h-screen w-screen bg-foreground text-background fixed top-0 left-0 transition-[opacity,transform] duration-500 -translate-x-full md:translate-x-0 ${
-        isOpen ? "opacity-100 !translate-x-0" : "opacity-0"
+      className={`h-screen w-screen bg-foreground text-background fixed top-0 left-0 transition-all duration-500 -translate-x-full md:translate-x-0 ${
+        isOpen ? "opacity-100 !translate-x-0 z-10" : "opacity-0 z-[-10]"
       }`}
     >
       <Container>

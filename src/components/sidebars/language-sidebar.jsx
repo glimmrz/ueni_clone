@@ -9,22 +9,20 @@ export function LanguageSidebar() {
   const { isOpen, onClose } = useLanguageSidebar();
   const sidebarRef = useRef(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        sidebarRef.current &&
-        !sidebarRef.current.contains(event.target) &&
-        isOpen
-      ) {
-        onClose();
-      }
-    };
+  const handleClick = (event) => {
+    if (isOpen && !sidebarRef?.current?.contains(event.target)) {
+      onClose();
+    }
+  };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isOpen, onClose]);
+  useEffect(() => {
+    if (sidebarRef) {
+      document.addEventListener("click", handleClick);
+    }
+
+    return () => document.removeEventListener("click", handleClick);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]);
 
   return (
     <aside
@@ -39,7 +37,6 @@ export function LanguageSidebar() {
             { language: "English", icon: "usa" },
             { language: "Spanish", icon: "spain" },
             { language: "Portuguese", icon: "portugal" },
-            { language: "Bengali", icon: "bangladesh" },
           ].map((item, index) => (
             <div
               key={index}

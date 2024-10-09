@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Container } from "../container";
 import { Logo } from "../logo";
 import { Button } from "../ui/button";
-import { Icon } from "../icon";
 import { useLanguageSidebar, useMenuSidebar } from "@/hooks/controllers";
 import { Hamburger } from "./hamburger";
+import Image from "next/image";
+import planet from "@/assets/planet.png";
+import close from "@/assets/close.png";
 
 export function Navbar() {
   const { isOpen, onOpen, onClose } = useMenuSidebar();
@@ -18,6 +20,16 @@ export function Navbar() {
       onClose();
     } else {
       onOpen();
+    }
+  };
+
+  const handleLanguageSidebar = (e) => {
+    e.stopPropagation();
+
+    if (lanSidebar.isOpen) {
+      lanSidebar.onClose();
+    } else {
+      lanSidebar.onOpen();
     }
   };
 
@@ -41,27 +53,41 @@ export function Navbar() {
               </span>
             </Button>
 
-            {/* Lamguage */}
-            {lanSidebar.isOpen && (
-              <Button
-                variant="outline"
-                className="min-w-fit gap-2 bg-transparent p-2"
-              >
-                <Icon icon="close" size={26} />
-                <span className="hidden md:block">English</span>
-              </Button>
-            )}
-
-            {!lanSidebar.isOpen && (
-              <Button
-                onClick={lanSidebar.onOpen}
-                variant="outline"
-                className="min-w-fit gap-2 bg-transparent p-2"
-              >
-                <Icon icon="planet" size={26} />
-                <span className="hidden md:block">English</span>
-              </Button>
-            )}
+            {/* Language */}
+            <Button
+              onClick={handleLanguageSidebar}
+              variant="outline"
+              className="min-w-fit gap-2 bg-transparent p-2"
+            >
+              <div className="h-7 w-7 flex items-center overflow-hidden">
+                <div
+                  className={`transition-all duration-300 ${
+                    lanSidebar.isOpen ? "-translate-x-7" : "translate-x-0"
+                  }`}
+                >
+                  <figure className="h-7 w-7 relative">
+                    <Image
+                      src={planet}
+                      alt=""
+                      className="object-contain"
+                      fill
+                    />
+                  </figure>
+                </div>
+                <div
+                  className={`transition-all duration-300 ${
+                    !lanSidebar.isOpen ? "translate-x-7" : "-translate-x-6"
+                  }`}
+                >
+                  <figure className="h-7 w-7 relative">
+                    <Image src={close} alt="" className="object-contain" fill />
+                  </figure>
+                </div>
+              </div>
+              <span className="hidden md:block">
+                {lanSidebar.isOpen ? "close" : "English"}
+              </span>
+            </Button>
           </div>
           <div className="flex items-center justify-center">
             <Logo />
@@ -72,7 +98,7 @@ export function Navbar() {
             <Link href="/auth">
               <Button
                 variant="outline"
-                className="bg-transparent px-2 md:px-8 text-base md:border-background gap-2 rounded-full min-w-fit "
+                className="bg-transparent px-2 md:px-8 text-lg md:text-base md:border-background gap-2 rounded-full min-w-fit "
               >
                 <span>login</span>
               </Button>
