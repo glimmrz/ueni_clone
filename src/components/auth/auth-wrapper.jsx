@@ -40,7 +40,7 @@ export function AuthWrapper() {
             {/* Apple */}
             <Button
               variant="outline"
-              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
+              className="w-full gap-4 rounded-full text-foreground hover:bg-background hover:text-foreground"
             >
               <Icon size={28} icon="apple" />
               <span>continue with apple</span>
@@ -48,23 +48,25 @@ export function AuthWrapper() {
             {/* Google */}
             <Button
               variant="outline"
-              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
+              className="w-full gap-4 rounded-full text-foreground hover:bg-background hover:text-foreground"
             >
               <Icon size={28} icon="google" />
               <span>continue with google</span>
             </Button>
-            <Button
-              variant="outline"
-              className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
-            >
-              <Icon size={28} icon="facebook" />
-              <span>continue with facebook</span>
-            </Button>
+            {mode === "login" && (
+              <Button
+                variant="outline"
+                className="w-full gap-4 rounded-full text-foreground border-transparent invert bg-foreground/10 hover:bg-foreground/20 hover:text-foreground transition-colors duration-300"
+              >
+                <Icon size={28} icon="facebook" />
+                <span>continue with facebook</span>
+              </Button>
+            )}
             {mode == "login" && (
               <Link href="/auth/sign-in-email">
                 <Button
                   variant="outline"
-                  className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
+                  className="w-full gap-4 rounded-full text-foreground border-transparent invert bg-foreground/10 hover:bg-foreground/20 hover:text-foreground transition-colors duration-300"
                 >
                   <Icon size={28} icon="gmail" />
                   <span>sign in with email</span>
@@ -75,7 +77,7 @@ export function AuthWrapper() {
               <Link href="/auth/sign-up-email" passHref>
                 <Button
                   variant="outline"
-                  className="w-full gap-4 rounded-full text-foreground hover:border-muted hover:bg-background/10"
+                  className="w-full gap-4 rounded-full text-foreground border-transparent invert bg-foreground/10 hover:bg-foreground/20 hover:text-foreground transition-colors duration-300"
                 >
                   <Icon size={28} icon="gmail" />
                   <span>sign up with email</span>
