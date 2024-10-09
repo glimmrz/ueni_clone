@@ -13,7 +13,7 @@ export function Refund() {
             className="md:text-left"
           />
 
-          <p className="text-[22px]">
+          <p className="text-[22px] text-center md:text-left">
             Try this package for up to 30 days and if you’re not happy with your
             purchase for any reason at all, contact{" "}
             <span className="underline">help@walton.com</span> for a full
