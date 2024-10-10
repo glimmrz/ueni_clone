@@ -27,7 +27,7 @@ export function Landing() {
 
   return (
     <Background>
-      <div className="relative h-[55vh] md:h-[80vh] w-full flex items-center justify-center overflow-hidden">
+      <div className="relative h-fit md:h-[80vh] w-full flex items-center justify-center overflow-hidden">
         <Section sectionStyles="mt-0 md:mt-0">
           <Heading className="text-center leading-snug md:leading-relaxed text-4xl lg:text-[74px] text-background">
             <span className="sr-only">

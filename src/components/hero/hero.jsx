@@ -67,7 +67,7 @@ export function Hero() {
 
             <div className="flex items-center flex-col md:flex-row md:gap-4">
               <div>
-                <span className="text-[46px]">£599</span>
+                <span className="text-[46px]">£499</span>
                 <span className="text-2xl">+VAT </span>
               </div>
               <span className="text-center md:text-left">

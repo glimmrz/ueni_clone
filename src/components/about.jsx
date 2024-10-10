@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 
 export function About() {
   return (
-    <Section className="py-0 md:py-8">
+    <Section className="pt-0">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-8">
           <Title

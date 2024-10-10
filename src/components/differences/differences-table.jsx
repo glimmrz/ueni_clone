@@ -224,7 +224,7 @@ export function DifferenceTable() {
               <Button className="hidden md:inline-flex">get started</Button>
             </td>
             <td className="p-1 md:p-3 text-base md:text-3xl font-semibold text-center w-32 bg-foreground text-background">
-              £12.99 /month
+              £7.89 /month
             </td>
             <td className="p-1 md:p-3 border-r-2 text-sm md:text-xl font-semibold text-destructive text-center w-32">
               £500 every year + endless time tinkering
