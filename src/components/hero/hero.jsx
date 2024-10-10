@@ -71,7 +71,7 @@ export function Hero() {
                 <span className="text-2xl">+VAT </span>
               </div>
               <span className="text-center md:text-left">
-                one-time fee & then £12.99/mo <br /> to run your website
+                one-time fee & then £7.89/mo <br /> to run your website
               </span>
             </div>
 
