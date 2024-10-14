@@ -3,6 +3,8 @@ import logo from "@/assets/placeholder.png";
 import { Section } from "./section";
 import { Title } from "./title";
 import { Card, CardContent } from "./ui/card";
+import Link from "next/link";
+import { Icon } from "./icon";
 
 export function Footer() {
   return (
@@ -101,13 +103,13 @@ export function Footer() {
         </svg>
       </div>
       <Section>
-        <div className="grid grid-cols-6 grid-rows-2 gap-4">
-          <div className="col-span-2 row-span-2">
+        <div className="grid gap-4 md:gap-8 md:grid-cols-6">
+          <div className="md:col-span-2">
             <Card className="border-transparent shadow-2xl h-full rounded-3xl">
               <CardContent className="py-8 px-8 h-full flex flex-col justify-between">
                 <Title
                   title="the smart wishlist app."
-                  className="text-left capitalize bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+                  className="text-left capitalize bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-8"
                 />
 
                 <div className="space-y-2">
@@ -124,7 +126,8 @@ export function Footer() {
               </CardContent>
             </Card>
           </div>
-          <div className="col-span-2 row-span-2 space-y-4">
+
+          <div className="space-y-4 md:col-span-2">
             <Card className="border-transparent shadow-2xl rounded-3xl">
               <CardContent className="px-8 py-8 flex flex-col gap-8">
                 <h2 className="text-[2rem] font-semibold text-blue-400">
@@ -168,68 +171,62 @@ export function Footer() {
               </CardContent>
             </Card>
           </div>
-          <div className="row-span-2 space-y-4">
-            <Card className="border-transparent shadow-2xl rounded-3xl">
-              <CardContent className="px-8 py-8 flex flex-col gap-8">
-                <h2 className="text-[2rem] font-semibold text-blue-400">
-                  Browser
-                </h2>
 
-                <div className="flex gap-4">
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    chrome
-                  </p>
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    edge
-                  </p>
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    firefox
-                  </p>
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    opera
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-transparent shadow-2xl rounded-3xl">
-              <CardContent className="px-8 py-8 flex flex-col gap-8">
-                <h2 className="text-[2rem] font-semibold text-pink-500">
-                  Walton
-                </h2>
-
-                <div className="flex gap-4">
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    ios
-                  </p>
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    android
-                  </p>
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    web
-                  </p>
-                </div>
+          <div className="md:col-start-6">
+            <Card className="border-transparent shadow-2xl rounded-3xl h-full md:row-span-2">
+              <CardContent className="px-8 py-8 h-full flex md:flex-col justify-between md:items-center">
+                <Link href="" className="text-muted-foreground">
+                  <Icon icon="tiktok" size={40} />
+                </Link>
+                <Link href="" className="text-muted-foreground">
+                  <Icon icon="tiktok" size={40} />
+                </Link>
+                <Link href="" className="text-muted-foreground">
+                  <Icon icon="tiktok" size={40} />
+                </Link>
+                <Link href="" className="text-muted-foreground">
+                  <Icon icon="tiktok" size={40} />
+                </Link>
+                <Link href="" className="text-muted-foreground">
+                  <Icon icon="tiktok" size={40} />
+                </Link>
               </CardContent>
             </Card>
           </div>
-          <div className="h-full">
-            <Card className="border-transparent shadow-2xl rounded-3xl h-full row-span-2">
-              <CardContent className="px-8 py-8 flex flex-col gap-8">
-                <h2 className="text-[2rem] font-semibold text-pink-500">
-                  Walton
-                </h2>
 
-                <div className="flex gap-4">
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    ios
+          <div className="grid grid-cols-2 md:grid-cols-1 gap-4 w-full md:col-start-5 md:row-start-1">
+            <Card className="border-transparent shadow-2xl rounded-3xl h-full">
+              <CardContent className="px-4 py-8 flex flex-col justify-center gap-4 h-full">
+                <Link href="">
+                  <p className="text-muted-foreground capitalize font-semibold">
+                    blog
                   </p>
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    android
+                </Link>
+                <Link href="">
+                  <p className="text-muted-foreground capitalize font-semibold">
+                    newest article
                   </p>
-                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer font-semibold capitalize">
-                    web
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="border-transparent shadow-2xl rounded-3xl">
+              <CardContent className="px-4 py-8 flex flex-col gap-4 h-full">
+                <Link href="">
+                  <p className="text-muted-foreground capitalize font-semibold">
+                    contact
                   </p>
-                </div>
+                </Link>
+                <Link href="">
+                  <p className="text-muted-foreground capitalize font-semibold">
+                    brand and media kit
+                  </p>
+                </Link>
+                <Link href="">
+                  <p className="text-muted-foreground capitalize font-semibold">
+                    policies
+                  </p>
+                </Link>
               </CardContent>
             </Card>
           </div>
