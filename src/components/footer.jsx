@@ -175,20 +175,36 @@ export function Footer() {
           <div className="md:col-start-6">
             <Card className="border-transparent shadow-2xl rounded-3xl h-full md:row-span-2">
               <CardContent className="px-8 py-8 h-full flex md:flex-col justify-between md:items-center">
-                <Link href="" className="text-muted-foreground">
+                <Link
+                  href=""
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+                >
                   <Icon icon="tiktok" size={40} />
                 </Link>
-                <Link href="" className="text-muted-foreground">
-                  <Icon icon="tiktok" size={40} />
+                <Link
+                  href=""
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+                >
+                  <Icon icon="instagram" size={40} />
                 </Link>
-                <Link href="" className="text-muted-foreground">
-                  <Icon icon="tiktok" size={40} />
+                <Link
+                  href=""
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+                >
+                  <Icon icon="facebook" size={40} />
                 </Link>
-                <Link href="" className="text-muted-foreground">
-                  <Icon icon="tiktok" size={40} />
+                <Link
+                  href=""
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+                >
+                  <Icon icon="twitter" size={40} />
                 </Link>
-                <Link href="" className="text-muted-foreground">
-                  <Icon icon="tiktok" size={40} />
+
+                <Link
+                  href=""
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+                >
+                  <Icon icon="linkedin" size={40} />
                 </Link>
               </CardContent>
             </Card>
@@ -198,12 +214,12 @@ export function Footer() {
             <Card className="border-transparent shadow-2xl rounded-3xl h-full">
               <CardContent className="px-4 py-8 flex flex-col justify-center gap-4 h-full">
                 <Link href="">
-                  <p className="text-muted-foreground capitalize font-semibold">
+                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 capitalize font-semibold">
                     blog
                   </p>
                 </Link>
                 <Link href="">
-                  <p className="text-muted-foreground capitalize font-semibold">
+                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 capitalize font-semibold">
                     newest article
                   </p>
                 </Link>
@@ -213,17 +229,17 @@ export function Footer() {
             <Card className="border-transparent shadow-2xl rounded-3xl">
               <CardContent className="px-4 py-8 flex flex-col gap-4 h-full">
                 <Link href="">
-                  <p className="text-muted-foreground capitalize font-semibold">
+                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 capitalize font-semibold">
                     contact
                   </p>
                 </Link>
                 <Link href="">
-                  <p className="text-muted-foreground capitalize font-semibold">
+                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 capitalize font-semibold">
                     brand and media kit
                   </p>
                 </Link>
                 <Link href="">
-                  <p className="text-muted-foreground capitalize font-semibold">
+                  <p className="text-muted-foreground hover:text-foreground transition-colors duration-300 capitalize font-semibold">
                     policies
                   </p>
                 </Link>
