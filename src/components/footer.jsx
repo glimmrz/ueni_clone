@@ -120,7 +120,7 @@ export function Footer() {
                     <Title title="Walton" className="text-left" />
                   </div>
                   <p className="text-muted-foreground text-xs">
-                    © 2024 Intent Technologies Inc. All rights reserved.
+                    © 2024 Walton Technologies Inc. All rights reserved.
                   </p>
                 </div>
               </CardContent>
