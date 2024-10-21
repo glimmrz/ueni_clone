@@ -6,7 +6,6 @@ import { Hero } from "@/components/hero/hero";
 import { Process } from "@/components/process/process";
 import { Refund } from "@/components/refund";
 import { Services } from "@/components/services/services";
-import { TrustpilotReviews } from "@/components/trustpilot-reviews/trustpilot-reviews";
 import customer from "@/assets/customer.png";
 import customer2 from "@/assets/customer2.png";
 
@@ -31,7 +30,6 @@ export default function Home() {
       <Features />
       <Process />
       <CustomerReview review={review1} />
-      <TrustpilotReviews />
       <Differences />
       <CustomerReview review={review2} />
       <Refund />

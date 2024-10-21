@@ -117,10 +117,10 @@ export function Footer() {
                     <figure className="relative h-11 w-11 rounded-md overflow-hidden">
                       <Image src={logo} alt="" className="object-cover" fill />
                     </figure>
-                    <Title title="Walton" className="text-left" />
+                    <Title title="ZERIS" className="text-left" />
                   </div>
                   <p className="text-muted-foreground text-xs">
-                    © 2024 Walton Technologies Inc. All rights reserved.
+                    © 2024 ZERIS Technologies Inc. All rights reserved.
                   </p>
                 </div>
               </CardContent>
@@ -154,7 +154,7 @@ export function Footer() {
             <Card className="border-transparent shadow-2xl rounded-3xl">
               <CardContent className="px-8 py-8 flex flex-col gap-8">
                 <h2 className="text-[2rem] font-semibold text-pink-500">
-                  Walton apps.
+                  ZERIS apps.
                 </h2>
 
                 <div className="flex gap-4">

@@ -6,6 +6,25 @@ import { Title } from "../title";
 import { ProcessCard } from "./process-card";
 import { useVideoModal } from "@/hooks/controllers";
 
+const steps = [
+  {
+    id: 1,
+    description: "get in touch with out sales representative.",
+    time: "sat - thu",
+  },
+  {
+    id: 2,
+    description:
+      "Describe your requirement in detail. features, color theme etc.",
+    time: "sat - thu",
+  },
+  {
+    id: 3,
+    description: "Launch your website.",
+    time: "sat - thu",
+  },
+];
+
 export function Process() {
   const { onOpen } = useVideoModal();
 
@@ -14,10 +33,10 @@ export function Process() {
       <div className="grid md:grid-cols-[2fr,1fr] gap-4 md:gap-8 items-center">
         <div>
           <Title title="How it works" subtitle="We bring your story to life" />
-          <div className="flex flex-col md:flex-row gap-2 mt-8">
-            <ProcessCard />
-            <ProcessCard />
-            <ProcessCard />
+          <div className="grid md:grid-cols-3 gap-2 mt-8">
+            {steps.map((step, index) => (
+              <ProcessCard key={index} step={step} />
+            ))}
           </div>
         </div>
         <div>
