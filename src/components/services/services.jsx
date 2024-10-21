@@ -39,7 +39,7 @@ const features = [
 export function Services() {
   return (
     <Section
-      title="What features are included in your UENI website?"
+      title="What features are included in your ZERIS website?"
       subtitle="All the essentials to run a successful website or online store."
     >
       <div className="grid gap-4 md:gap-8 md:grid-cols-2">

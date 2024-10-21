@@ -41,7 +41,7 @@ const checkboxData = [
 export function Features() {
   return (
     <Section
-      title="We build your website at an affordable price."
+      title="We provide services at an affordable price."
       subtitle="Launch the website of your dreams."
     >
       <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">

@@ -32,19 +32,22 @@ export function MenuSidebar() {
     >
       <Container>
         <div className="mt-32 flex flex-col space-y-4">
-          {["WALTON vs others", "Features", "Examples", "FAQs"].map(
-            (item, index) => (
-              <Link
-                key={index}
-                href="#"
-                className="font-semibold text-2xl hover:text-primary relative w-fit group"
-                onClick={onClose}
-              >
-                <span>{item}</span>
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
-              </Link>
-            )
-          )}
+          {[
+            { label: "WALTON vs others", slug: "#differences" },
+            { label: "Features", slug: "#features" },
+            { label: "Examples", slug: "examples" },
+            { label: "FAQs", slug: "faq" },
+          ].map((item, index) => (
+            <Link
+              key={index}
+              href={item.slug}
+              className="font-semibold text-2xl hover:text-primary relative w-fit group"
+              onClick={onClose}
+            >
+              <span>{item.label}</span>
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
+            </Link>
+          ))}
         </div>
       </Container>
     </div>

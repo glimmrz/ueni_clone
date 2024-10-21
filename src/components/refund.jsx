@@ -16,8 +16,8 @@ export function Refund() {
           <p className="text-[22px] text-center md:text-left">
             Try this package for up to 30 days and if you’re not happy with your
             purchase for any reason at all, contact{" "}
-            <span className="underline">help@walton.com</span> for a full
-            refund. No questions asked.
+            <span className="underline">help@zeris.xyz</span> for a full refund.
+            No questions asked.
           </p>
         </div>
         <figure className="relative h-40">

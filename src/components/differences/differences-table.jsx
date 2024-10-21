@@ -9,7 +9,7 @@ export function DifferenceTable() {
           <tr className="border-b-2 border-shade">
             <th className="p-1 md:p-3 text-base md:text-xl font-bold w-2/4"></th>
             <th className="p-1 md:p-3 text-base md:text-xl font-semibold text-center w-32 bg-foreground text-background">
-              WALTON
+              ZERIS
             </th>
             <th className="p-1 md:p-3 text-base md:text-xl border-r-2 font-semibold text-center w-32">
               DIY

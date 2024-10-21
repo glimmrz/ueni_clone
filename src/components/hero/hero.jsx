@@ -44,7 +44,7 @@ export function Hero() {
             </figure>
 
             <Heading className="text-center">
-              Get a website built for you in 7 days
+              Get a website for your business in 7 days
             </Heading>
 
             <div className="flex items-center justify-center md:justify-start flex-row gap-2 flex-wrap md:flex-nowrap md:gap-4">
@@ -67,11 +67,10 @@ export function Hero() {
 
             <div className="flex items-center flex-col md:flex-row md:gap-4">
               <div>
-                <span className="text-[46px]">£499</span>
-                <span className="text-2xl">+VAT </span>
+                <span className="text-[46px]"> ৳0</span>
               </div>
               <span className="text-center md:text-left">
-                one-time fee & then £7.89/mo <br /> to run your website
+                one-time fee & then ৳1999/mo <br /> to run your website
               </span>
             </div>
 

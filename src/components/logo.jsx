@@ -1,17 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from "@/assets/logo.png";
 
 export function Logo() {
   return (
-    // <Link href="/">
-    //   <figure className="w-[90px] h-[18px]">
-    //     <Image src={logo} alt="walton" />
-    //   </figure>
-    // </Link>
     <Link href="/">
-      <h1 className="text-background text-2xl font-semibold uppercase">
-        zeris
-      </h1>
+      <figure className="h-[50px] w-[150px]">
+        <Image src={logo} alt="walton" />
+      </figure>
     </Link>
   );
 }
