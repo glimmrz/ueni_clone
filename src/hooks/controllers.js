@@ -12,12 +12,6 @@ export const useMenuSidebar = create((set) => ({
   onClose: () => set({ isOpen: false }),
 }));
 
-export const useLanguageSidebar = create((set) => ({
-  isOpen: false,
-  onOpen: () => set({ isOpen: true }),
-  onClose: () => set({ isOpen: false }),
-}));
-
 export const useVideoModal = create((set) => ({
   isOpen: false,
   src: null,

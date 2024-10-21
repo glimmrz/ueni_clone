@@ -9,7 +9,9 @@ export function Logo() {
     //   </figure>
     // </Link>
     <Link href="/">
-      <h1 className="text-background text-2xl font-semibold">WALTON</h1>
+      <h1 className="text-background text-2xl font-semibold uppercase">
+        zeris
+      </h1>
     </Link>
   );
 }

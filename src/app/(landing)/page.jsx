@@ -1,10 +1,8 @@
-import { About } from "@/components/about";
 import { CustomerReview } from "@/components/customer-review";
 import { Differences } from "@/components/differences/defferences";
 import { Faq } from "@/components/faq/faq";
 import { Features } from "@/components/features";
 import { Hero } from "@/components/hero/hero";
-import { Landing } from "@/components/landing";
 import { Process } from "@/components/process/process";
 import { Refund } from "@/components/refund";
 import { Services } from "@/components/services/services";
@@ -29,8 +27,6 @@ const review2 = {
 export default function Home() {
   return (
     <>
-      <Landing />
-      <About />
       <Hero />
       <Features />
       <Process />
