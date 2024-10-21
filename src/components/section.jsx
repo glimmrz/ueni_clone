@@ -18,7 +18,9 @@ export function Section({
             <Title title={title} subtitle={subtitle} />
           </div>
         )}
-        <div className={cn("mt-6 md:mt-8", sectionStyles)}>{children}</div>
+        <div className={cn(title ? "mt-6 md:mt-8" : "", sectionStyles)}>
+          {children}
+        </div>
       </Container>
     </section>
   );

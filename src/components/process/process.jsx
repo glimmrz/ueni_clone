@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import process from "@/assets/process.png";
+import placeholder from "@/assets/placeholder.png";
 import { Section } from "../section";
 import { Title } from "../title";
 import { ProcessCard } from "./process-card";
@@ -48,7 +48,7 @@ export function Process() {
             }
             className="relative w-full md:w-[520px] h-[355px] md:h-[455px] rounded-md overflow-hidden cursor-pointer"
           >
-            <Image src={process} alt="" fill className="object-cover" />
+            <Image src={placeholder} alt="" fill className="object-cover" />
           </figure>
         </div>
       </div>

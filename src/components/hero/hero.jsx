@@ -32,17 +32,8 @@ export function Hero() {
   return (
     <Background>
       <div className="min-h-screen text-background">
-        <Section className="py-4">
-          <div className="flex flex-col items-center justify-center gap-8">
-            <figure className="relative h-[22px] w-full md:w-[360px] hidden md:block">
-              <Image
-                src={trustpilot}
-                alt="trustpilot image"
-                fill
-                className="object-contain"
-              />
-            </figure>
-
+        <Section>
+          <div className="flex flex-col items-center justify-center gap-6">
             <Heading className="text-center">
               Get a website for your business in 7 days
             </Heading>
@@ -67,31 +58,12 @@ export function Hero() {
 
             <div className="flex items-center flex-col md:flex-row md:gap-4">
               <div>
-                <span className="text-[46px]">৳0</span>
+                <span className="text-[46px]">৳1999</span>
+                <span className="text-2xl">/mo </span>
               </div>
               <span className="text-center md:text-left">
-                one-time fee & then ৳1999/mo <br /> to run your website
+                only to run your website. <br /> No hidden charges.
               </span>
-            </div>
-
-            <div className="flex flex-col items-center gap-4 w-full">
-              <figure className="relative h-[22px] w-full block md:hidden">
-                <Image
-                  src={trustpilot}
-                  alt="trustpilot image"
-                  fill
-                  className="object-contain"
-                />
-              </figure>
-
-              <figure className="relative h-[32px] w-full md:w-[500px]">
-                <Image
-                  src={trustpilot_rev}
-                  alt="trustpilot link"
-                  fill
-                  className="object-contain"
-                />
-              </figure>
             </div>
 
             <HeroPromo />

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import computer from "@/assets/computer.png";
+import computer from "@/assets/tech.webp";
 import { Checkbox } from "./checkbox";
 import { Section } from "./section";
 
