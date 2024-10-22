@@ -9,7 +9,7 @@ import { useVideoModal } from "@/hooks/controllers";
 const steps = [
   {
     id: 1,
-    description: "get in touch with out sales representative.",
+    description: "get in touch with our sales representative.",
     time: "sat - thu",
   },
   {
