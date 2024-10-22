@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/assets/placeholder.png";
+import logo from "@/assets/placeholder.svg";
 import { Section } from "./section";
 import { Title } from "./title";
 import { Card, CardContent } from "./ui/card";

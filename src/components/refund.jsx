@@ -15,7 +15,7 @@ export function Refund() {
 
           <p className="text-[22px] text-center md:text-left">
             Try our services free for 30 days and if you’re not happy with our
-            service no need to pay at all, contact{" "}
+            service continue at all, contact{" "}
             <span className="underline">help@zeris.xyz</span> for free trial.
           </p>
         </div>

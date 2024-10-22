@@ -100,27 +100,6 @@ export function DifferenceTable() {
 
           <tr className="border-b-2 border-shade last-of-type:border-0">
             <td className="p-1 md:p-3 text-xs md:text-base ">
-              Edit with easy-to-use website editor
-            </td>
-            <td className="p-1 md:p-3 text-xl text-center w-32 bg-foreground text-background">
-              <div className="flex items-center justify-center">
-                <Icon size={24} icon="check" />
-              </div>
-            </td>
-            <td className="p-1 md:p-3 text-xl border-r-2 text-center w-32">
-              <div className="flex items-center justify-center">
-                <Icon size={24} icon="check" />
-              </div>
-            </td>
-            <td className="p-1 md:p-3 text-xl text-center w-32">
-              <div className="flex items-center justify-center">
-                <Icon size={24} icon="cross" />
-              </div>
-            </td>
-          </tr>
-
-          <tr className="border-b-2 border-shade last-of-type:border-0">
-            <td className="p-1 md:p-3 text-xs md:text-base ">
               Custom one-on-one support
             </td>
             <td className="p-1 md:p-3 text-xl text-center w-32 bg-foreground text-background">
@@ -184,7 +163,7 @@ export function DifferenceTable() {
 
           <tr className="border-b-2 border-shade last-of-type:border-0">
             <td className="p-1 md:p-3 text-xs md:text-base ">
-              Unlimited edits for 30 days
+              lifetime free updates
             </td>
             <td className="p-1 md:p-3 text-xl text-center w-32 bg-foreground text-background">
               <div className="flex items-center justify-center">

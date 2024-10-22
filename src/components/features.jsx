@@ -30,11 +30,11 @@ const checkboxData = [
   },
   {
     icon: "check",
-    label: "Our team on hand to help you",
+    label: "24/7 support team",
   },
   {
     icon: "check",
-    label: "30 day money-back guarantee",
+    label: "30 days free trial",
   },
 ];
 

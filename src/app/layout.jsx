@@ -2,7 +2,7 @@ import { font } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata = {
-  title: "Zeris technologies",
+  title: "Zeris Technologies",
   description: "Empowering Businesses, One Cloud at a Time.",
 };
 

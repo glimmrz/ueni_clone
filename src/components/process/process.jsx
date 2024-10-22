@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import placeholder from "@/assets/placeholder.png";
+import placeholder from "@/assets/placeholder.svg";
 import { Section } from "../section";
 import { Title } from "../title";
 import { ProcessCard } from "./process-card";
@@ -20,7 +20,7 @@ const steps = [
   },
   {
     id: 3,
-    description: "Launch your website.",
+    description: "Launch and promote your website.",
     time: "sat - thu",
   },
 ];
@@ -32,7 +32,7 @@ export function Process() {
     <Section>
       <div className="grid md:grid-cols-[2fr,1fr] gap-4 md:gap-8 items-center">
         <div>
-          <Title title="How it works" subtitle="We bring your story to life" />
+          <Title title="How it works?" subtitle="We bring your story to life" />
           <div className="grid md:grid-cols-3 gap-2 mt-8">
             {steps.map((step, index) => (
               <ProcessCard key={index} step={step} />

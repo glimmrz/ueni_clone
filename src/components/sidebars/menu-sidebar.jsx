@@ -33,7 +33,7 @@ export function MenuSidebar() {
       <Container>
         <div className="mt-32 flex flex-col space-y-4">
           {[
-            { label: "WALTON vs others", slug: "#differences" },
+            { label: "ZERIS vs others", slug: "#differences" },
             { label: "Features", slug: "#features" },
             { label: "Examples", slug: "examples" },
             { label: "FAQs", slug: "faq" },
